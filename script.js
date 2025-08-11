@@ -2,17 +2,18 @@ const startAndstopBtn = document.getElementById("startAndstopBtn");
 const recordedAudio = document.getElementById("recordedAudio");
 const loading = document.getElementById("loading");
 const successMessage = document.getElementById("successMessage");
-const audioSection = document.getElementById("audioSection");
-const audioPlayer = document.getElementById("audioPlayer");
 
 let mediaRecorder;
 let audioChunks = [];
 let isRecording = false;
 let stream;
 
-async function endtoendAudio(formdata) {
+// Generate a persistent session_id for memory
+const sessionId = crypto.randomUUID();
+
+async function endtoendAudioWithMemory(formdata) {
     try {
-        const response = await fetch("/llm/query", {
+        const response = await fetch(`/agent/chat/${sessionId}`, {
             method: "POST",
             body: formdata
         });
@@ -22,7 +23,7 @@ async function endtoendAudio(formdata) {
         }
 
         const data = await response.json();
-        console.log(data)
+        console.log("Server reply:", data);
         return data;
     } catch (error) {
         console.error("Error from transcribe to audio:", error.message);
@@ -30,12 +31,10 @@ async function endtoendAudio(formdata) {
     }
 }
 
-startAndstopBtn.addEventListener("click", async (e) => {
-    e.preventDefault();
-
-    if (!isRecording) {
-        try {
-            stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+function startRecording() {
+    navigator.mediaDevices.getUserMedia({ audio: true })
+        .then((mediaStream) => {
+            stream = mediaStream;
             mediaRecorder = new MediaRecorder(stream);
             audioChunks = [];
 
@@ -46,7 +45,6 @@ startAndstopBtn.addEventListener("click", async (e) => {
             };
 
             mediaRecorder.onstop = async () => {
-                // Show loading state
                 loading.style.display = "block";
                 successMessage.classList.remove("show");
                 recordedAudio.style.display = "none";
@@ -55,20 +53,18 @@ startAndstopBtn.addEventListener("click", async (e) => {
                 let formdata = new FormData();
                 formdata.append("file", audioBlob);
 
-               
-                const { audio_url } = await endtoendAudio(formdata);
-                console.log(audio_url)
+                const { audio_url } = await endtoendAudioWithMemory(formdata);
 
-                // Hide loading & show success
                 loading.style.display = "none";
                 successMessage.classList.add("show");
-
-                successMessage.style.opacity = 1;
-
-                // Play the generated audio
                 recordedAudio.src = audio_url;
                 recordedAudio.style.display = "block";
                 recordedAudio.play();
+
+                // Automatically start recording again after playback
+                recordedAudio.onended = () => {
+                    startRecording();
+                };
 
                 setTimeout(() => {
                     successMessage.classList.remove("show");
@@ -79,14 +75,21 @@ startAndstopBtn.addEventListener("click", async (e) => {
             isRecording = true;
             startAndstopBtn.textContent = "Stop Recording";
             startAndstopBtn.classList.add("stillRecording");
-
-        } catch (err) {
+        })
+        .catch((err) => {
             alert("Microphone access denied or unavailable.");
             console.error(err);
-        }
+        });
+}
+
+startAndstopBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    if (!isRecording) {
+        startRecording();
     } else {
         mediaRecorder.stop();
-        stream.getTracks().forEach(track => track.stop());
+        stream.getTracks().forEach((track) => track.stop());
         isRecording = false;
         startAndstopBtn.textContent = "Start Recording";
         startAndstopBtn.classList.remove("stillRecording");
