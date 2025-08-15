@@ -4,31 +4,29 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 # 🗓️ Day 1 – Kickoff & Setup
 - 🚀 Joined the Murf AI Voice Agent Challenge
 - 🧠 Explored the challenge format, goals, and tools
-💻 Set up the base project using FastAPI
-🔐 Registered and tested the Murf API key
-🎉 Successfully generated my first TTS audio with Murf AI
+- 💻 Set up the base project using FastAPI
+- 🔐 Registered and tested the Murf API key
+- 🎉 Successfully generated my first TTS audio with Murf AI
 
-🗓️ Day 2 – TTS API Integration
-🔁 Connected Murf's TTS API to FastAPI backend
-🧪 Built a basic UI with text input and audio playback
-🎧 Achieved full text-to-speech cycle in browser
-🛠️ Handled errors gracefully on both front and back end
-📢 Shared my progress on LinkedIn with #30DayVoiceAgent
+# 🗓️ Day 2 – TTS API Integration
+- 🔁 Connected Murf's TTS API to FastAPI backend
+- 🧪 Built a basic UI with text input and audio playback
+- 🎧 Achieved full text-to-speech cycle in browser
+- 🛠️ Handled errors gracefully on both front and back end
+- 📢 Shared my progress on LinkedIn with #30DayVoiceAgent
 
-🗓️ Day 3 – Voice Agent UX
-🖌️ Polished the UI with improved design (HTML/CSS)
-🔄 Refactored API flow for smoother UX
-💡 Learned how to make the voice interaction feel more natural
-🙌 Thanked Murf AI publicly for enabling student creativity
+# 🗓️ Day 3 – Voice Agent UX
+- 🖌️ Polished the UI with improved design (HTML/CSS)
+- 🔄 Refactored API flow for smoother UX
+- 💡 Learned how to make the voice interaction feel more natural
+- 🙌 Thanked Murf AI publicly for enabling student creativity
 
-🗓️ Day 4 – Echo Bot 🎤
-🪞 Added a brand-new feature: Echo Bot section in the UI
-
-🧩 Used the browser’s MediaRecorder API to:
-
-Start and stop mic recordings
-Instantly play back recorded audio
-🧠 Learned how to work with real-time audio in the browser
+# 🗓️ Day 4 – Echo Bot 🎤
+- 🪞 Added a brand-new feature: Echo Bot section in the UI
+- 🧩 Used the browser’s MediaRecorder API to:
+- - - Start and stop mic recordings
+- - - Instantly play back recorded audio
+- 🧠 Learned how to work with real-time audio in the browser
 
 ✨ This will serve as the foundation for future speech input integration
 
