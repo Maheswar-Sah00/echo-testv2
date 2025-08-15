@@ -48,7 +48,7 @@ def getReponsefromGemini(prompt: str) -> str:
         return response.text.strip()
     except Exception as e:
         print(f"Gemini error: {e}")
-        return "Sorry, I couldn't process that."
+        return "i am having trouble with response right now"
 
 @app.post("/llm/query")
 async def tts_echo(file: UploadFile = File(...)):
