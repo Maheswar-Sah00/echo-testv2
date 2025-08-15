@@ -1,27 +1,27 @@
 # 🎙️ Murf AI Voice Agent Challenge
 Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm building a smart and interactive voice agent using Murf AI's powerful TTS capabilities and integrating it with real-time tech like **AssemblyAI** , **FastAPI** , and **LLM APIs**.
 
-# 🗓️ Day 1 – Kickoff & Setup
+## 🗓️ Day 1 – Kickoff & Setup
 - 🚀 Joined the Murf AI Voice Agent Challenge
 - 🧠 Explored the challenge format, goals, and tools
 - 💻 Set up the base project using FastAPI
 - 🔐 Registered and tested the Murf API key
 - 🎉 Successfully generated my first TTS audio with Murf AI
 
-# 🗓️ Day 2 – TTS API Integration
+## 🗓️ Day 2 – TTS API Integration
 - 🔁 Connected Murf's TTS API to FastAPI backend
 - 🧪 Built a basic UI with text input and audio playback
 - 🎧 Achieved full text-to-speech cycle in browser
 - 🛠️ Handled errors gracefully on both front and back end
 - 📢 Shared my progress on LinkedIn with #30DayVoiceAgent
 
-# 🗓️ Day 3 – Voice Agent UX
+## 🗓️ Day 3 – Voice Agent UX
 - 🖌️ Polished the UI with improved design (HTML/CSS)
 - 🔄 Refactored API flow for smoother UX
 - 💡 Learned how to make the voice interaction feel more natural
 - 🙌 Thanked Murf AI publicly for enabling student creativity
 
-# 🗓️ Day 4 – Echo Bot 🎤
+## 🗓️ Day 4 – Echo Bot 🎤
 - 🪞 Added a brand-new feature: Echo Bot section in the UI
 - 🧩 Used the browser’s MediaRecorder API to:
   - Start and stop mic recordings
@@ -29,7 +29,7 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 - 🧠 Learned how to work with real-time audio in the browser
 - ✨ This will serve as the foundation for future speech input integration
 
-# 🗓️ Day 5 – Audio Upload + Server Integration ☁️
+## 🗓️ Day 5 – Audio Upload + Server Integration ☁️
 - ⏺️ Extended the Echo Bot to upload audio to my Python server
 - 🛠️ Built a new /upload API in FastAPI to:
    - Accept audio blob from frontend
@@ -38,13 +38,13 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 - 🔔 Added a real-time status message on UI after upload
 - 🔃 Improved end-to-end interactivity from mic → server → playback
 
-# 🗓️ Day 6 – Transcription Integration ✍️
+## 🗓️ Day 6 – Transcription Integration ✍️
 - 🧵 Created /transcribe/file endpoint on backend
 - 📤 Accepts audio, returns transcription via AssemblyAI
 - 🖥️ Integrated transcription into frontend UI
 - 📜 Now have record voice → upload → transcribe → display text flow
 
-# 🗓️ Day 7 – Voice-to-Voice with /tts/echo 🎤🔄🎙️
+## 🗓️ Day 7 – Voice-to-Voice with /tts/echo 🎤🔄🎙️
 - 🆕 Backend endpoint: /tts/echo
 - 🎙️ Flow:
   i. Accept audio → transcribe (AssemblyAI)
@@ -52,7 +52,7 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
   iii. Return voice file URL to client
 - 🔄 Full voice-to-voice pipeline now works: User speaks → Server transcribes → Murf re-voices → Client plays
 
-# 🗓️ Day 8 – Building LLM Query Endpoint 🧠💬
+## 🗓️ Day 8 – Building LLM Query Endpoint 🧠💬
 - 🆕 Added a brand-new backend endpoint: /llm/query in FastAPI
 - 📩 This endpoint:
   - Accepts a JSON payload containing text from the frontend
@@ -63,7 +63,7 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 - 🚫 Implemented error handling for API issues and model mismatches
 - 💡 This is the first step towards a conversational AI that can handle natural queries
 
-# 🗓️ Day 9 – Audio-to-Audio AI Conversation 🎤🤖🎙️
+## 🗓️ Day 9 – Audio-to-Audio AI Conversation 🎤🤖🎙️
 - 🔄 Upgraded the /llm/query endpoint to accept audio recordings directly from the browser
 - 📋 New flow:
   - User records voice in browser
@@ -75,7 +75,7 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 - 🎧 On the frontend, the new voice plays instantly after generation
 - ✨ Now the AI can listen and talk back without needing any text input
 
-# 🗓️ Day 10 – Session-Based Chat Memory 🗂️🗣️
+## 🗓️ Day 10 – Session-Based Chat Memory 🗂️🗣️
 - 🧠 Added context awareness so the AI remembers what was said earlier in the conversation
 - 🆕 New backend endpoint: /agent/chat/{session_id}
 - 📋 Flow:
@@ -87,14 +87,14 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
   - Converts reply to speech with Murf AI and sends it back
 - 🎯 Result: Smooth, natural, and context-aware conversations with the AI agent
 
-# 🗓️ Day 11 – Robust Error Handling 🛡️⚙️
+## 🗓️ Day 11 – Robust Error Handling 🛡️⚙️
 - 🔒 Added try/except blocks in FastAPI to catch backend errors
 - 🛠️ Added try/catch in JavaScript to show clear error messages to users
 - 📢 User now gets friendly alerts instead of cryptic error codes
 - 📉 Reduced app crashes during network/API failures
 - ✅ A more reliable and user-friendly experience overall
 
-# 🗓️ Day 12 – Conversational Agent UI Revamp 🎨🖥️
+## 🗓️ Day 12 – Conversational Agent UI Revamp 🎨🖥️
 - 🎯 Focused on polishing the user interface for better UX
 - ✨ Key improvements:
   - One-tap recording: Start/stop with a single button
@@ -102,18 +102,19 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
   - Auto-play replies: No extra clicks to hear AI’s voice
   - Mobile responsive design for on-the-go testing
   - Removed unused sections to keep UI clean and minimal
-📸 Updated UI screenshot:
-🚀 Now the voice agent feels like a real app, not just a prototype
+- 📸 Updated UI screenshot:
+  ![UI Image](image.png)
+- 🚀 Now the voice agent feels like a real app, not just a prototype
 
-⚙️ What You’ll Need
-FastAPI (Python)
-Murf AI API key
-AssemblyAI API key
-Google Gemini API key
-HTML, CSS, JS frontend
-.env file to store keys
+## ⚙️ What You’ll Need
+- FastAPI (Python)
+- Murf AI API key
+- AssemblyAI API key
+- Google Gemini API key
+- HTML, CSS, JS frontend
+- .env file to store keys
 
-💡 Tools I'm Using
+## 💡 Tools I'm Using
 | Tool              | Purpose                                      |
 |-------------------|----------------------------------------------|
 | Murf AI           | Text-to-Speech (TTS)                         |
