@@ -127,7 +127,8 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 
 # 🛠 Installation & Run Instructions
 ## 📂 Project Structure
-`├── MURFAI/  
+```
+├── MURFAI/  
  │   ├── index.html  
  │   ├── main.py  
  │   ├── script.js  
@@ -135,33 +136,45 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
  ├── .env  
  ├── requirement.txt  
  ├── README.md  
-`
+```
 
 # 🔑 API Keys
 Create `.env` file in root:
 
-`MURF_API_KEY=your_murf_api_key  
+```
+MURF_API_KEY=your_murf_api_key  
 ASSEMBLY_API_KEY=your_assemblyai_api_key  
-GEMINI_API_KEY=your_gemini_api_key  `
+GEMINI_API_KEY=your_gemini_api_key
+```
 
 # 📥 Installation Steps
 ## 1️⃣ Clone the repo
-`git clone https://github.com/Maheswar-Sah00/Murf-AI-Challenge.git<br>
-cd Murf-AI-Voice-Agent`
+```
+git clone https://github.com/Maheswar-Sah00/Murf-AI-Challenge.git<br>
+cd Murf-AI-Voice-Agent
+```
 
 # 2️⃣ Create and activate virtual environment
 - Windows:
-`python -m venv .venv
-.venv\Scripts\activate`
+```
+python -m venv .venv
+.venv\Scripts\activate
+```
 - Mac/Linux:
-`python3 -m venv .venv
-source .venv/bin/activate`
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
 
 # 3️⃣ Install dependencies
-`pip install -r requirement.txt`
+```
+pip install -r requirement.txt
+```
 
 # 4️⃣ Run the FastAPI server
-`uvicorn main:app --reload`
+```
+uvicorn main:app --reload
+```
 
 # 🙌 Special Thanks
 Huge thanks to **Murf AI** for organizing this amazing challenge and encouraging builders to explore the world of voice-first interfaces. Your tools are enabling the next generation of interactive agents 
