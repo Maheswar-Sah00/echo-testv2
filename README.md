@@ -127,14 +127,15 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 
 # 🛠 Installation & Run Instructions
 ## 📂 Project Structure
-`├── MURFAI/ 
-│   ├── index.html
-│   ├── main.py
-│   ├── script.js
-│   ├── style.css
-├── .env
-├── requirement.txt
-├── README.md `
+`├── MURFAI/  
+ │   ├── index.html  
+ │   ├── main.py  
+ │   ├── script.js  
+ │   ├── style.css
+ ├── .env  
+ ├── requirement.txt  
+ ├── README.md  
+`
 
 # 🔑 API Keys
 Create `.env` file in root:
