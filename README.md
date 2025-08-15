@@ -125,45 +125,46 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 | AssemblyAI / STT  | Transcribing recorded audio                   |
 | Gemini API        | AI-generated conversation                    |
 
-🛠 Installation & Run Instructions
-📂 Project Structure
-├── MURFAI/ 
+# 🛠 Installation & Run Instructions
+## 📂 Project Structure
+`├── MURFAI/ 
 │   ├── index.html
 │   ├── main.py
 │   ├── script.js
 │   ├── style.css
 ├── .env
 ├── requirement.txt
-├── README.md
+├── README.md `
 
-🔑 API Keys
-Create .env file in root:
+# 🔑 API Keys
+Create `.env` file in root:
 
-MURF_API_KEY=your_murf_api_key
+`MURF_API_KEY=your_murf_api_key
 ASSEMBLY_API_KEY=your_assemblyai_api_key
-GEMINI_API_KEY=your_gemini_api_key
+GEMINI_API_KEY=your_gemini_api_key`
 
-📥 Installation Steps
-1️⃣ Clone the repo
+# 📥 Installation Steps
+## 1️⃣ Clone the repo
+`git clone https://github.com/Maheswar-Sah00/Murf-AI-Challenge.git
+cd Murf-AI-Voice-Agent`
 
-git clone https://github.com/Maheswar-Sah00/Murf-AI-Challenge.git
-cd Murf-AI-Voice-Agent
-2️⃣ Create and activate virtual environment
+# 2️⃣ Create and activate virtual environment
+- Windows:
+`python -m venv .venv
+.venv\Scripts\activate`
+- Mac/Linux:
+`python3 -m venv .venv
+source .venv/bin/activate`
 
-Windows:
-python -m venv .venv
-.venv\Scripts\activate
-Mac/Linux:
-python3 -m venv .venv
-source .venv/bin/activate
-3️⃣ Install dependencies
+# 3️⃣ Install dependencies
+`pip install -r requirement.txt`
 
-pip install -r requirement.txt
-4️⃣ Run the FastAPI server
+# 4️⃣ Run the FastAPI server
+`uvicorn main:app --reload`
 
-uvicorn main:app --reload
-🙌 Special Thanks
-Huge thanks to Murf AI for organizing this amazing challenge and encouraging builders to explore the world of voice-first interfaces. Your tools are enabling the next generation of interactive agents 
+# 🙌 Special Thanks
+Huge thanks to **Murf AI** for organizing this amazing challenge and encouraging builders to explore the world of voice-first interfaces. Your tools are enabling the next generation of interactive agents 
 
 🔗 Follow My Progress
-📍 Catch my updates on LinkedIn with: #30DayVoiceAgent Let’s build cool voice stuff together!
+📍 Catch my updates on LinkedIn with: [#30DayVoiceAgent](https://www.linkedin.com/in/maheswar-sahoo-0ba638348/) 
+ Let’s build cool voice stuff together!
