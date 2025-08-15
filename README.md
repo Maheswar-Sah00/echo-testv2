@@ -24,104 +24,85 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 # 🗓️ Day 4 – Echo Bot 🎤
 - 🪞 Added a brand-new feature: Echo Bot section in the UI
 - 🧩 Used the browser’s MediaRecorder API to:
-- - - Start and stop mic recordings
-- - - Instantly play back recorded audio
+  - Start and stop mic recordings
+  - Instantly play back recorded audio
 - 🧠 Learned how to work with real-time audio in the browser
+- ✨ This will serve as the foundation for future speech input integration
 
-✨ This will serve as the foundation for future speech input integration
+# 🗓️ Day 5 – Audio Upload + Server Integration ☁️
+- ⏺️ Extended the Echo Bot to upload audio to my Python server
+- 🛠️ Built a new /upload API in FastAPI to:
+   - Accept audio blob from frontend
+   - Save it in an /uploads folder
+   - Return file name, type, and size
+- 🔔 Added a real-time status message on UI after upload
+- 🔃 Improved end-to-end interactivity from mic → server → playback
 
-🗓️ Day 5 – Audio Upload + Server Integration ☁️
-⏺️ Extended the Echo Bot to upload audio to my Python server
+# 🗓️ Day 6 – Transcription Integration ✍️
+- 🧵 Created /transcribe/file endpoint on backend
+- 📤 Accepts audio, returns transcription via AssemblyAI
+- 🖥️ Integrated transcription into frontend UI
+- 📜 Now have record voice → upload → transcribe → display text flow
 
-🛠️ Built a new /upload API in FastAPI to:
+# 🗓️ Day 7 – Voice-to-Voice with /tts/echo 🎤🔄🎙️
+- 🆕 Backend endpoint: /tts/echo
+- 🎙️ Flow:
+  i. Accept audio → transcribe (AssemblyAI)
+  ii. Send text to Murf AI → generate new voice
+  iii. Return voice file URL to client
+- 🔄 Full voice-to-voice pipeline now works: User speaks → Server transcribes → Murf re-voices → Client plays
 
-Accept audio blob from frontend
-Save it in an /uploads folder
-Return file name, type, and size
-🔔 Added a real-time status message on UI after upload
+# 🗓️ Day 8 – Building LLM Query Endpoint 🧠💬
+- 🆕 Added a brand-new backend endpoint: /llm/query in FastAPI
+- 📩 This endpoint:
+  - Accepts a JSON payload containing text from the frontend
+  - Sends the text to Google Gemini API
+  - Returns the AI-generated response in JSON format
+- ⚡ Used the gemini-1.5-flash model for quick replies
+- 🛠️ Created a helper function getResponseFromGemini() to keep code clean
+- 🚫 Implemented error handling for API issues and model mismatches
+- 💡 This is the first step towards a conversational AI that can handle natural queries
 
-🔃 Improved end-to-end interactivity from mic → server → playback
+# 🗓️ Day 9 – Audio-to-Audio AI Conversation 🎤🤖🎙️
+- 🔄 Upgraded the /llm/query endpoint to accept audio recordings directly from the browser
+- 📋 New flow:
+  - User records voice in browser
+  - Audio is sent to backend as multipart/form-data
+  - AssemblyAI transcribes the speech into text
+  - Transcription is sent to Google Gemini API for a reply
+  - AI reply is sent to Murf AI for lifelike TTS output
+  - Backend returns the generated audio to the frontend
+- 🎧 On the frontend, the new voice plays instantly after generation
+- ✨ Now the AI can listen and talk back without needing any text input
 
-🗓️ Day 6 – Transcription Integration ✍️
-🧵 Created /transcribe/file endpoint on backend
-📤 Accepts audio, returns transcription via AssemblyAI
-🖥️ Integrated transcription into frontend UI
-📜 Now have record voice → upload → transcribe → display text flow
+# 🗓️ Day 10 – Session-Based Chat Memory 🗂️🗣️
+- 🧠 Added context awareness so the AI remembers what was said earlier in the conversation
+- 🆕 New backend endpoint: /agent/chat/{session_id}
+- 📋 Flow:
+  - Accepts audio file from client
+  - Transcribes it with AssemblyAI
+  - Saves message into session chat history keyed by session_id
+  - Sends full conversation history to Gemini for context-rich replies
+  - Adds AI reply to session memory
+  - Converts reply to speech with Murf AI and sends it back
+- 🎯 Result: Smooth, natural, and context-aware conversations with the AI agent
 
-🗓️ Day 7 – Voice-to-Voice with /tts/echo 🎤🔄🎙️
-🆕 Backend endpoint: /tts/echo
+# 🗓️ Day 11 – Robust Error Handling 🛡️⚙️
+- 🔒 Added try/except blocks in FastAPI to catch backend errors
+- 🛠️ Added try/catch in JavaScript to show clear error messages to users
+- 📢 User now gets friendly alerts instead of cryptic error codes
+- 📉 Reduced app crashes during network/API failures
+- ✅ A more reliable and user-friendly experience overall
 
-🎙️ Flow:
-
-Accept audio → transcribe (AssemblyAI)
-Send text to Murf AI → generate new voice
-Return voice file URL to client
-🔄 Full voice-to-voice pipeline now works: User speaks → Server transcribes → Murf re-voices → Client plays
-
-🗓️ Day 8 – Building LLM Query Endpoint 🧠💬
-🆕 Added a brand-new backend endpoint: /llm/query in FastAPI
-
-📩 This endpoint:
-
-Accepts a JSON payload containing text from the frontend
-Sends the text to Google Gemini API
-Returns the AI-generated response in JSON format
-⚡ Used the gemini-1.5-flash model for quick replies
-
-🛠️ Created a helper function getResponseFromGemini() to keep code clean
-
-🚫 Implemented error handling for API issues and model mismatches
-
-💡 This is the first step towards a conversational AI that can handle natural queries
-
-🗓️ Day 9 – Audio-to-Audio AI Conversation 🎤🤖🎙️
-🔄 Upgraded the /llm/query endpoint to accept audio recordings directly from the browser
-
-📋 New flow:
-
-User records voice in browser
-Audio is sent to backend as multipart/form-data
-AssemblyAI transcribes the speech into text
-Transcription is sent to Google Gemini API for a reply
-AI reply is sent to Murf AI for lifelike TTS output
-Backend returns the generated audio to the frontend
-🎧 On the frontend, the new voice plays instantly after generation
-
-✨ Now the AI can listen and talk back without needing any text input
-
-🗓️ Day 10 – Session-Based Chat Memory 🗂️🗣️
-🧠 Added context awareness so the AI remembers what was said earlier in the conversation
-
-🆕 New backend endpoint: /agent/chat/{session_id}
-
-📋 Flow:
-
-Accepts audio file from client
-Transcribes it with AssemblyAI
-Saves message into session chat history keyed by session_id
-Sends full conversation history to Gemini for context-rich replies
-Adds AI reply to session memory
-Converts reply to speech with Murf AI and sends it back
-🎯 Result: Smooth, natural, and context-aware conversations with the AI agent
-
-🗓️ Day 11 – Robust Error Handling 🛡️⚙️
-🔒 Added try/except blocks in FastAPI to catch backend errors
-🛠️ Added try/catch in JavaScript to show clear error messages to users
-📢 User now gets friendly alerts instead of cryptic error codes
-📉 Reduced app crashes during network/API failures
-✅ A more reliable and user-friendly experience overall
-
-🗓️ Day 12 – Conversational Agent UI Revamp 🎨🖥️
-🎯 Focused on polishing the user interface for better UX
-✨ Key improvements:
-
-One-tap recording: Start/stop with a single button
-Animated mic button: Visual feedback while recording
-Auto-play replies: No extra clicks to hear AI’s voice
-Mobile responsive design for on-the-go testing
-Removed unused sections to keep UI clean and minimal
+# 🗓️ Day 12 – Conversational Agent UI Revamp 🎨🖥️
+- 🎯 Focused on polishing the user interface for better UX
+- ✨ Key improvements:
+  - One-tap recording: Start/stop with a single button
+  - Animated mic button: Visual feedback while recording
+  - Auto-play replies: No extra clicks to hear AI’s voice
+  - Mobile responsive design for on-the-go testing
+  - Removed unused sections to keep UI clean and minimal
 📸 Updated UI screenshot:
-
 🚀 Now the voice agent feels like a real app, not just a prototype
 
 ⚙️ What You’ll Need
