@@ -139,13 +139,13 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 # 🔑 API Keys
 Create `.env` file in root:
 
-`MURF_API_KEY=your_murf_api_key
-ASSEMBLY_API_KEY=your_assemblyai_api_key
-GEMINI_API_KEY=your_gemini_api_key`
+`MURF_API_KEY=your_murf_api_key <br>
+ASSEMBLY_API_KEY=your_assemblyai_api_key  <br>
+GEMINI_API_KEY=your_gemini_api_key <br>`
 
 # 📥 Installation Steps
 ## 1️⃣ Clone the repo
-`git clone https://github.com/Maheswar-Sah00/Murf-AI-Challenge.git
+`git clone https://github.com/Maheswar-Sah00/Murf-AI-Challenge.git<br>
 cd Murf-AI-Voice-Agent`
 
 # 2️⃣ Create and activate virtual environment
