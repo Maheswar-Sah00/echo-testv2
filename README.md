@@ -140,9 +140,7 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 Create `.env` file in root:
 
 `MURF_API_KEY=your_murf_api_key  
-
 ASSEMBLY_API_KEY=your_assemblyai_api_key  
-
 GEMINI_API_KEY=your_gemini_api_key  `
 
 # 📥 Installation Steps
