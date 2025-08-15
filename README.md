@@ -1,5 +1,5 @@
 # 🎙️ Murf AI Voice Agent Challenge
-### Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm building a smart and interactive voice agent using Murf AI's powerful TTS capabilities and integrating it with real-time tech like **AssemblyAI** , **FastAPI** , and **LLM APIs**.
+Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm building a smart and interactive voice agent using Murf AI's powerful TTS capabilities and integrating it with real-time tech like **AssemblyAI** , **FastAPI** , and **LLM APIs**.
 
 # 🗓️ Day 1 – Kickoff & Setup
 - 🚀 Joined the Murf AI Voice Agent Challenge
