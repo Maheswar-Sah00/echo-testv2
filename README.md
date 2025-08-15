@@ -122,7 +122,7 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 | HTML/CSS/JS       | UI for interaction and playback              |
 | MediaRecorder     | Echo Bot mic capture + playback              |
 | FormData          | Uploading audio blob to the backend          |
-| AssemblyAI / STT  | Transcribing recorded audio                   |
+| AssemblyAI / STT  | Transcribing recorded audio                  |
 | Gemini API        | AI-generated conversation                    |
 
 # 🛠 Installation & Run Instructions
@@ -139,9 +139,9 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 # 🔑 API Keys
 Create `.env` file in root:
 
-`MURF_API_KEY=your_murf_api_key <br>
-ASSEMBLY_API_KEY=your_assemblyai_api_key  <br>
-GEMINI_API_KEY=your_gemini_api_key <br>`
+`MURF_API_KEY=your_murf_api_key  
+ASSEMBLY_API_KEY=your_assemblyai_api_key   
+GEMINI_API_KEY=your_gemini_api_key  `
 
 # 📥 Installation Steps
 ## 1️⃣ Clone the repo
