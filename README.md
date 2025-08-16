@@ -133,8 +133,14 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 - 🔗 Shared the repository link on **LinkedIn** to showcase progress 🌐  
 <<<<<<< HEAD
 - 🚀 Halfway milestone achieved — **16 days left to go!** 🔥
-=======
-- 🚀 Halfway milestone achieved — **16 days left to go!** 🔥  
+
+## 🗓️ Day 15 – Real-Time Audio Streaming  
+- 🔄 **Integrated WebSockets** for continuous audio exchange  
+- 🎤 **Enabled real-time voice input streaming** from client to server  
+- 🔊 **Played back Murf AI generated speech live** without full file generation  
+- ⚡ **Achieved smooth low-latency audio interaction**  
+- 🎉 **First successful end-to-end real-time streaming pipeline is live!**  
+
 
 >>>>>>> streaming
 
