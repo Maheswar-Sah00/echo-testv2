@@ -106,6 +106,28 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
   ![UI Image](image.png)
 - 🚀 Now the voice agent feels like a real app, not just a prototype
 
+## 🗓️ Day 13 – Documentation 📚📝
+- 🎯 Focused on writing project documentation for clarity and collaboration  
+- ✨ Key highlights:  
+  - Added a **README.md** file in the project root  
+  - Documented **project overview, features, and tech stack**  
+  - Added **setup instructions** including environment variables and dependencies  
+  - Explained **project architecture** for easier understanding  
+  - Included **screenshots section** for visual reference 
+- 🚀 Now the project is **developer-friendly**, making it easy for anyone to clone, run, and contribute  
+
+## 🗓️ Day 14 – Code Refactoring & Cleanup 🧹⚡
+- 🎯 Focused on improving code quality, readability, and maintainability  
+- ✨ Key highlights:  
+  - Defined **Pydantic Schemas** for request & response validation  
+  - Moved **STT & TTS logic** into a `/services` folder  
+  - Added **logging** for better debugging & monitoring  
+  - Removed **unused imports, variables, and functions**  
+  - Added the **README.md** file to GitHub for version control  
+- 📂 Uploaded the project to **GitHub (Public Repo)**  
+- 🔗 Shared the repository link on **LinkedIn** to showcase progress 🌐  
+- 🚀 Halfway milestone achieved — **16 days left to go!** 🔥
+
 ## ⚙️ What You’ll Need
 - FastAPI (Python)
 - Murf AI API key
