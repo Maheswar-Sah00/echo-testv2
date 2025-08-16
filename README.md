@@ -128,14 +128,27 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 # 🛠 Installation & Run Instructions
 ## 📂 Project Structure
 ```
-├── MURFAI/  
- │   ├── index.html  
- │   ├── main.py  
- │   ├── script.js  
- │   ├── style.css
- ├── .env  
- ├── requirement.txt  
- ├── README.md  
+murfai/
+├── frontend/
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+│
+├── routes/
+│   └── agent_chat.py
+│
+├── screenshots/
+│
+├── services/
+│   ├── gemini_services.py
+│   ├── stt_services.py
+│   └── tts_services.py
+│
+├── utils/
+│   └── logging.py
+│
+├── main.py
+└── .gitignore
 ```
 
 # 🔑 API Keys
