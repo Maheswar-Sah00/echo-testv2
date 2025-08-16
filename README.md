@@ -94,18 +94,40 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 - 📉 Reduced app crashes during `network/API` failures
 - ✅ A more reliable and user-friendly experience overall
 
-🗓️ Day 12 – Conversational Agent UI Revamp 🎨🖥️
-🎯 Focused on polishing the user interface for better UX
-✨ Key improvements:
-
-One-tap recording: Start/stop with a single button
-Animated mic button: Visual feedback while recording
-Auto-play replies: No extra clicks to hear AI’s voice
-Mobile responsive design for on-the-go testing
-Removed unused sections to keep UI clean and minimal
+## 🗓️ Day 12 – Conversational Agent UI Revamp 🎨🖥️
+- 🎯 Focused on polishing the user interface for better UX
+- ✨ Key improvements:
+  - One-tap recording: Start/stop with a single button
+  - Animated mic button: Visual feedback while recording
+  - Auto-play replies: No extra clicks to hear AI’s voice
+  - Mobile responsive design for on-the-go testing
+  - Removed unused sections to keep UI clean and minimal
 📸 Updated UI screenshot:
+   ![UI](Screenshots/image.png)
+- 🚀 Now the voice agent feels like a real app, not just a prototype
 
-🚀 Now the voice agent feels like a real app, not just a prototype
+## 🗓️ Day 13 – Documentation 📚📝
+- 🎯 Focused on writing project documentation for clarity and collaboration  
+- ✨ Key highlights:  
+  - Added a **README.md** file in the project root  
+  - Documented **project overview, features, and tech stack**  
+  - Added **setup instructions** including environment variables and dependencies  
+  - Explained **project architecture** for easier understanding  
+  - Included **screenshots section** for visual reference 
+- 🚀 Now the project is **developer-friendly**, making it easy for anyone to clone, run, and contribute  
+
+## 🗓️ Day 14 – Code Refactoring & Cleanup 🧹⚡
+- 🎯 Focused on improving code quality, readability, and maintainability  
+- ✨ Key highlights:  
+  - Defined **Pydantic Schemas** for request & response validation  
+  - Moved **STT & TTS logic** into a `/services` folder  
+  - Added **logging** for better debugging & monitoring  
+  - Removed **unused imports, variables, and functions**  
+  - Added the **README.md** file to GitHub for version control  
+- 📂 Uploaded the project to **GitHub (Public Repo)**  
+- 🔗 Shared the repository link on **LinkedIn** to showcase progress 🌐  
+- 🚀 Halfway milestone achieved — **16 days left to go!** 🔥  
+
 
 ## ⚙️ What You’ll Need
 - FastAPI (Python)

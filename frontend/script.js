@@ -95,3 +95,18 @@ startAndstopBtn.addEventListener("click", (e) => {
         startAndstopBtn.classList.remove("stillRecording");
     }
 });
+
+const socket = new WebSocket("ws://localhost:8000/ws");
+
+socket.onopen = () => {
+    console.log("Connected to WebSocket");
+    socket.send("Hello from frontend!");
+};
+
+socket.onmessage = (event) => {
+    console.log("Message from server:", event.data);
+};
+
+socket.onclose = () => {
+    console.log("WebSocket closed");
+};
