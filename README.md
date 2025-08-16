@@ -105,10 +105,6 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 <<<<<<< HEAD
 - 📸 Updated UI screenshot:
   ![UI Image](Screenshots/image.png)
-=======
-📸 Updated UI screenshot:
-   ![UI](Screenshots/image.png)
->>>>>>> streaming
 - 🚀 Now the voice agent feels like a real app, not just a prototype
 
 ## 🗓️ Day 13 – Documentation 📚📝
@@ -131,8 +127,6 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
   - Added the **README.md** file to GitHub for version control  
 - 📂 Uploaded the project to **GitHub (Public Repo)**  
 - 🔗 Shared the repository link on **LinkedIn** to showcase progress 🌐  
-<<<<<<< HEAD
-- 🚀 Halfway milestone achieved — **16 days left to go!** 🔥
 
 ## 🗓️ Day 15 – Real-Time Audio Streaming  
 - 🔄 **Integrated WebSockets** for continuous audio exchange  
@@ -140,9 +134,6 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 - 🔊 **Played back Murf AI generated speech live** without full file generation  
 - ⚡ **Achieved smooth low-latency audio interaction**  
 - 🎉 **First successful end-to-end real-time streaming pipeline is live!**  
-
-
->>>>>>> streaming
 
 ## ⚙️ What You’ll Need
 - FastAPI (Python)
