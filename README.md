@@ -123,8 +123,22 @@ Auto-play replies: No extra clicks to hear AI’s voice
 Mobile responsive design for on-the-go testing
 Removed unused sections to keep UI clean and minimal
 📸 Updated UI screenshot:
-
+![Echo Bot V2 UI](image.png)
 🚀 Now the voice agent feels like a real app, not just a prototype
+
+🗓️ Day 13 – Documentation & Project Overview 📄✨
+🖋️ Dedicated the day to creating a complete README.md for the project.
+📚 Added detailed sections on:
+Project Overview – what the voice agent does
+Technologies Used – Murf AI, FastAPI, AssemblyAI, Gemini API, etc.
+Architecture – how frontend, backend, and APIs interact
+Features – from TTS to conversational AI with memory
+Setup Instructions – clear guide for running the project locally
+Environment Variables – listing required API keys
+
+🚀 Now the project is well-documented and ready for GitHub, LinkedIn, and future contributors.
+
+
 
 ⚙️ What You’ll Need
 FastAPI (Python)
