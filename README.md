@@ -103,7 +103,7 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
   - Mobile responsive design for on-the-go testing
   - Removed unused sections to keep UI clean and minimal
 - 📸 Updated UI screenshot:
-  ![UI Image](image.png)
+  ![UI Image](Screenshots/image.png)
 - 🚀 Now the voice agent feels like a real app, not just a prototype
 
 ## 🗓️ Day 13 – Documentation 📚📝
