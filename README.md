@@ -94,17 +94,18 @@ Welcome to my journey through the Murf AI Voice Agent 30-Day Challenge! I'm buil
 - 📉 Reduced app crashes during `network/API` failures
 - ✅ A more reliable and user-friendly experience overall
 
-## 🗓️ Day 12 – Conversational Agent UI Revamp 🎨🖥️
-- 🎯 Focused on polishing the user interface for better UX
-- ✨ Key improvements:
-  - One-tap recording: Start/stop with a single button
-  - Animated mic button: Visual feedback while recording
-  - Auto-play replies: No extra clicks to hear AI’s voice
-  - Mobile responsive design for on-the-go testing
-  - Removed unused sections to keep UI clean and minimal
-- 📸 Updated UI screenshot:
-  ![UI Image](image.png)
-- 🚀 Now the voice agent feels like a real app, not just a prototype
+🗓️ Day 12 – Conversational Agent UI Revamp 🎨🖥️
+🎯 Focused on polishing the user interface for better UX
+✨ Key improvements:
+
+One-tap recording: Start/stop with a single button
+Animated mic button: Visual feedback while recording
+Auto-play replies: No extra clicks to hear AI’s voice
+Mobile responsive design for on-the-go testing
+Removed unused sections to keep UI clean and minimal
+📸 Updated UI screenshot:
+
+🚀 Now the voice agent feels like a real app, not just a prototype
 
 ## ⚙️ What You’ll Need
 - FastAPI (Python)
